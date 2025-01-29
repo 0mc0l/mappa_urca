@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4b72bdc324783fdf274f3a338233a73 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4b72bdc324783fdf274f3a338233a73" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4b72bdc324783fdf274f3a338233a73 = L.map(
+                "map_e4b72bdc324783fdf274f3a338233a73",
+                {
+                    center: [44.41, 8.89],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_771d9cc194f0c75dac3f7a128d6e36f0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_771d9cc194f0c75dac3f7a128d6e36f0.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var tile_layer_cc7e41382714be751890800c4155bc6d = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc7e41382714be751890800c4155bc6d.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_7887a6ea70d45f8ffae61de800c34c6a = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_54831a33fac70405cb74fc7571ee7f8f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fillColor": "red", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_54831a33fac70405cb74fc7571ee7f8f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_54831a33fac70405cb74fc7571ee7f8f = L.geoJson(null, {
+                onEachFeature: geo_json_54831a33fac70405cb74fc7571ee7f8f_onEachFeature,
+            
+                style: geo_json_54831a33fac70405cb74fc7571ee7f8f_styler,
+        });
+
+        function geo_json_54831a33fac70405cb74fc7571ee7f8f_add (data) {
+            geo_json_54831a33fac70405cb74fc7571ee7f8f
+                .addData(data);
+        }
+            geo_json_54831a33fac70405cb74fc7571ee7f8f_add({"bbox": [8.878486726468825, 44.40277595033393, 8.908394839265421, 44.41795727450273], "features": [{"bbox": [8.888856229889184, 44.40277595033393, 8.888856229889184, 44.40277595033393], "geometry": {"coordinates": [8.888856229889184, 44.40277595033393], "type": "Point"}, "id": "0", "properties": {"fonte dato": 2, "n segnalaz": 3.0, "nome": "Qualit\u00e0 delle acque", "soggetto": "insegnante, capitano della guardia costiera, pensionato", "testo": "Tema della salvaguardia del mare (le acque meteoriche trasportano attraverso la rete plastica e spazzatura che arriva diretta in mare)"}, "type": "Feature"}, {"bbox": [8.888456236313935, 44.41297114096, 8.888456236313935, 44.41297114096], "geometry": {"coordinates": [8.888456236313935, 44.41297114096], "type": "Point"}, "id": "1", "properties": {"fonte dato": 2, "n segnalaz": 3.0, "nome": "Piazza Montano", "soggetto": "insegnante, capitano della guardia costiera, pensionato", "testo": "Allagamenti frequenti, inoltre, la rotonda \u00e8 completamente impermeabile"}, "type": "Feature"}, {"bbox": [8.89014701899901, 44.411705866985386, 8.89014701899901, 44.411705866985386], "geometry": {"coordinates": [8.89014701899901, 44.411705866985386], "type": "Point"}, "id": "2", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Carzino", "soggetto": "insegnante", "testo": "Voltino soggetto spesso ad allagamenti"}, "type": "Feature"}, {"bbox": [8.888232637672933, 44.41185644807854, 8.888232637672933, 44.41185644807854], "geometry": {"coordinates": [8.888232637672933, 44.41185644807854], "type": "Point"}, "id": "3", "properties": {"fonte dato": 2, "n segnalaz": 2.0, "nome": "Piazza Settembrini", "soggetto": "insegnante, pensionato", "testo": "Quella che era una rotonda verde oggi \u00e8 asfaltato"}, "type": "Feature"}, {"bbox": [8.888801446084846, 44.41330998659652, 8.888801446084846, 44.41330998659652], "geometry": {"coordinates": [8.888801446084846, 44.41330998659652], "type": "Point"}, "id": "4", "properties": {"fonte dato": 2, "n segnalaz": 2.0, "nome": "Via Rolando", "soggetto": "insegnante, pensionato", "testo": "Soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.889538434007466, 44.4115983172055, 8.889538434007466, 44.4115983172055], "geometry": {"coordinates": [8.889538434007466, 44.4115983172055], "type": "Point"}, "id": "5", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Orsolino", "soggetto": "insegnante", "testo": "Isola ecologica: cassonetti nuovi, in altri punti presenza di cassonetti in plastica, con il vento, se lasciati aperti, la spazzatura finisce in strada e non solo"}, "type": "Feature"}, {"bbox": [8.881896713712532, 44.415619495674015, 8.881896713712532, 44.415619495674015], "geometry": {"coordinates": [8.881896713712532, 44.415619495674015], "type": "Point"}, "id": "6", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Eridania 50", "soggetto": "pensionato", "testo": "3 pompe in funzionamento continuo, insufficienti in caso di piogge molto intense"}, "type": "Feature"}, {"bbox": [8.879096450939826, 44.41180606023029, 8.879096450939826, 44.41180606023029], "geometry": {"coordinates": [8.879096450939826, 44.41180606023029], "type": "Point"}, "id": "7", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Passaggio a livello", "soggetto": "capitano della guardia costiera", "testo": "Passaggio a livello di Calata ronco spesso allagato, con ogni avvenimento di pioggia si \"misurano\" circa 50 cm d\u0027acqua"}, "type": "Feature"}, {"bbox": [8.898118961595115, 44.4112686912498, 8.898118961595115, 44.4112686912498], "geometry": {"coordinates": [8.898118961595115, 44.4112686912498], "type": "Point"}, "id": "8", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Balbi Piovera", "soggetto": "capitano della guardia costiera", "testo": "Sistema fognario intasato (=rete di drenaggio)"}, "type": "Feature"}, {"bbox": [8.902229701125094, 44.4131325344442, 8.902229701125094, 44.4131325344442], "geometry": {"coordinates": [8.902229701125094, 44.4131325344442], "type": "Point"}, "id": "9", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via San Bartolomeo del Fossato", "soggetto": "insegnante", "testo": "Soggetto ad allagamenti frequeti"}, "type": "Feature"}, {"bbox": [8.908394839265421, 44.41118171836038, 8.908394839265421, 44.41118171836038], "geometry": {"coordinates": [8.908394839265421, 44.41118171836038], "type": "Point"}, "id": "10", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Milano - accesso a Varco Eritrea", "soggetto": "capitano della guardia costiera", "testo": "Fognature intasate e scoperte, presenza di acqua all\u0027interno delle officine della Guardia Costiera"}, "type": "Feature"}, {"bbox": [8.90470166969625, 44.409931055994605, 8.90470166969625, 44.409931055994605], "geometry": {"coordinates": [8.90470166969625, 44.409931055994605], "type": "Point"}, "id": "11", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Varco San Benigno", "soggetto": "capitano della guardia costiera", "testo": "Sistema dei tombini sempre intasato a causa dei materiali persi dai camion di Esselunga, porta sia un disagio ambientale che di sicurezza"}, "type": "Feature"}, {"bbox": [8.900882201771948, 44.412927464252974, 8.900882201771948, 44.412927464252974], "geometry": {"coordinates": [8.900882201771948, 44.412927464252974], "type": "Point"}, "id": "12", "properties": {"fonte dato": 2, "n segnalaz": 2.0, "nome": "Rio Fossato", "soggetto": "inesgante, capitano della guardia costiera", "testo": "Confluisce al depuratore di Darsena,  \u00e8 alimentato da rii tombinati che ne causano un innalzamento ed \u00e8 visibile per lavori in corso a cielo aperto"}, "type": "Feature"}, {"bbox": [8.888957774906007, 44.41314563464122, 8.888957774906007, 44.41314563464122], "geometry": {"coordinates": [8.888957774906007, 44.41314563464122], "type": "Point"}, "id": "13", "properties": {"fonte dato": 2, "n segnalaz": 2.0, "nome": "Sottopassaggio P. Montano", "soggetto": "insegnante, pensionato", "testo": "Fino agli anni \u002790 vi erano attivit\u00e0 commerciali, poi ha iniziato ad allagarsi,  a causa di riempimenti a mare + impermeabilizzazione delle supercifi per urbanizzazione + cambiamento climatico, ad oggi ci sono lampeggianti per segnalare allagamenti"}, "type": "Feature"}, {"bbox": [8.879508010055098, 44.41146698849584, 8.879508010055098, 44.41146698849584], "geometry": {"coordinates": [8.879508010055098, 44.41146698849584], "type": "Point"}, "id": "14", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Ciclabile Via Cantore", "soggetto": "pensionato", "testo": "Percorso ciclabile spesso allagato"}, "type": "Feature"}, {"bbox": [8.90132133478681, 44.413546753916016, 8.90132133478681, 44.413546753916016], "geometry": {"coordinates": [8.90132133478681, 44.413546753916016], "type": "Point"}, "id": "15", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Rio Bartolomeo", "soggetto": "insegnante", "testo": "Passa sotto l\u0027autostrada"}, "type": "Feature"}, {"bbox": [8.899163388268828, 44.41153978527662, 8.899163388268828, 44.41153978527662], "geometry": {"coordinates": [8.899163388268828, 44.41153978527662], "type": "Point"}, "id": "16", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via G. Pascoli", "soggetto": "insegnante", "testo": "Allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.882027968611533, 44.415592906373156, 8.882027968611533, 44.415592906373156], "geometry": {"coordinates": [8.882027968611533, 44.415592906373156], "type": "Point"}, "id": "17", "properties": {"fonte dato": 2, "n segnalaz": 1.0, "nome": "Via Eridania 50", "soggetto": "pensionato", "testo": "2 pompe industriali, c\u0027\u00e8 falda quindi 2 cm di acqua costante,  per preservare l\u0027attivit\u00e0 nel seminterrato sono in costante funzionamento. L\u0027acqua arriva sia dalla falda che dal muro del parcheggio della ferrovia"}, "type": "Feature"}, {"bbox": [8.88680887146306, 44.41378985899784, 8.88680887146306, 44.41378985899784], "geometry": {"coordinates": [8.88680887146306, 44.41378985899784], "type": "Point"}, "id": "18", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Stazione di Genova Sampierdarena", "soggetto": "-", "testo": "allagamenti frequenti sia in stazione che nella strada di accesso a casusa di caditoie occluse, questo comporta l\u0027allagamento delle piste ciclabili"}, "type": "Feature"}, {"bbox": [8.889137342531644, 44.41310645885766, 8.889137342531644, 44.41310645885766], "geometry": {"coordinates": [8.889137342531644, 44.41310645885766], "type": "Point"}, "id": "19", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Via G.B. Monti", "soggetto": "-", "testo": "caditoia cementata che fa andare l\u0027acqua direttamente nel sottopassaggio allagandolo"}, "type": "Feature"}, {"bbox": [8.888441698066055, 44.41499750781622, 8.888441698066055, 44.41499750781622], "geometry": {"coordinates": [8.888441698066055, 44.41499750781622], "type": "Point"}, "id": "20", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Via Rolando", "soggetto": "-", "testo": "presenza di torrenti sotterranei che confluiscono in via rolando"}, "type": "Feature"}, {"bbox": [8.887779194296359, 44.41373732572944, 8.887779194296359, 44.41373732572944], "geometry": {"coordinates": [8.887779194296359, 44.41373732572944], "type": "Point"}, "id": "21", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Palazzo Residenziale", "soggetto": "-", "testo": "caditoia occlusa che provoca allagamenti rendendo inagibile l\u0027accesso ai parcheggi sotterranei del palazzo (gli stessi accessi al palazzo vengono ostruiti dalla pioggia)"}, "type": "Feature"}, {"bbox": [8.888420052086122, 44.412374425455916, 8.888420052086122, 44.412374425455916], "geometry": {"coordinates": [8.888420052086122, 44.412374425455916], "type": "Point"}, "id": "22", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Piazza Settembrini", "soggetto": "-", "testo": "avvallamento della strada in prossimit\u00e0 dell\u0027attraversamento che crea allagamenti"}, "type": "Feature"}, {"bbox": [8.887410540256576, 44.417111441614274, 8.887410540256576, 44.417111441614274], "geometry": {"coordinates": [8.887410540256576, 44.417111441614274], "type": "Point"}, "id": "23", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "progetto posteggi", "soggetto": "-", "testo": "progetto fallito perch\u00e8 zona molto allagabile"}, "type": "Feature"}, {"bbox": [8.896414609648364, 44.4127679044074, 8.896414609648364, 44.4127679044074], "geometry": {"coordinates": [8.896414609648364, 44.4127679044074], "type": "Point"}, "id": "24", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "ascensore", "soggetto": "-", "testo": "cabina di un vecchio ascensore abbandonata"}, "type": "Feature"}, {"bbox": [8.888803990511509, 44.41213433026417, 8.888803990511509, 44.41213433026417], "geometry": {"coordinates": [8.888803990511509, 44.41213433026417], "type": "Point"}, "id": "25", "properties": {"fonte dato": 2, "n segnalaz": null, "nome": "Piazza Settembrini", "soggetto": "-", "testo": "spazi ristretti"}, "type": "Feature"}, {"bbox": [8.889208393647463, 44.41113783369055, 8.889208393647463, 44.41113783369055], "geometry": {"coordinates": [8.889208393647463, 44.41113783369055], "type": "Point"}, "id": "26", "properties": {"fonte dato": 1, "n segnalaz": 1.0, "nome": "Vico della Catena", "soggetto": "studente scuola superiore", "testo": "tombini otturati, quando piove si allaga la via"}, "type": "Feature"}, {"bbox": [8.888406154490193, 44.41226666415728, 8.888406154490193, 44.41226666415728], "geometry": {"coordinates": [8.888406154490193, 44.41226666415728], "type": "Point"}, "id": "27", "properties": {"fonte dato": 1, "n segnalaz": 1.0, "nome": "voltino Piazza Montano-Piazza Vittorio Veneto", "soggetto": "studente scuola superiore", "testo": "voltino spesso allagato che impedisce il passaggio di mezzi di trasporto pubblico e quindi agli studenti di arrivare a scuola"}, "type": "Feature"}, {"bbox": [8.888453342114795, 44.41295027146517, 8.888453342114795, 44.41295027146517], "geometry": {"coordinates": [8.888453342114795, 44.41295027146517], "type": "Point"}, "id": "28", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza Montano", "soggetto": "studente scuola media", "testo": "Il sottopassaggio era chiuso per allagamento, impedendo agli studenti di attraversare velocemente, costringendoli ad un giro pi\u00f9 lungo \"sono arrivato tardi a scuola\""}, "type": "Feature"}, {"bbox": [8.888396567386362, 44.41548542780358, 8.888396567386362, 44.41548542780358], "geometry": {"coordinates": [8.888396567386362, 44.41548542780358], "type": "Point"}, "id": "29", "properties": {"fonte dato": 0, "n segnalaz": 7.0, "nome": "Don Bosco", "soggetto": "studente scuola media", "testo": "Campo in erba sintetica"}, "type": "Feature"}, {"bbox": [8.89020753157054, 44.41641989433879, 8.89020753157054, 44.41641989433879], "geometry": {"coordinates": [8.89020753157054, 44.41641989433879], "type": "Point"}, "id": "30", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Via dei Landi", "soggetto": "studente scuola media", "testo": "segbnalano la caduta di una compagna a causa del marciapiede scivoloso"}, "type": "Feature"}, {"bbox": [8.888681203867826, 44.41795727450273, 8.888681203867826, 44.41795727450273], "geometry": {"coordinates": [8.888681203867826, 44.41795727450273], "type": "Point"}, "id": "31", "properties": {"fonte dato": 0, "n segnalaz": 4.0, "nome": "Via Antonio Caveri", "soggetto": "studente scuola media", "testo": "Presenza di conche nel cemento con tombini al centro che sono pieni di foglie che non fanno passare l\u0027acqua cheando pozzanghere di modeste dimensioni"}, "type": "Feature"}, {"bbox": [8.890950706296865, 44.412424336105744, 8.890950706296865, 44.412424336105744], "geometry": {"coordinates": [8.890950706296865, 44.412424336105744], "type": "Point"}, "id": "32", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "generale", "soggetto": "studente scuola media", "testo": "i marciapiedi si possono rendere permeabili, come i parcheggi, le zone di sosta e le rotonde"}, "type": "Feature"}, {"bbox": [8.892065044301154, 44.412113011557885, 8.892065044301154, 44.412113011557885], "geometry": {"coordinates": [8.892065044301154, 44.412113011557885], "type": "Point"}, "id": "33", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Via Cantore", "soggetto": "studente scuola media", "testo": "spartitraffifo"}, "type": "Feature"}, {"bbox": [8.888402418982762, 44.41294877598541, 8.888402418982762, 44.41294877598541], "geometry": {"coordinates": [8.888402418982762, 44.41294877598541], "type": "Point"}, "id": "34", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza Montano", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.887543671071597, 44.41317359984074, 8.887543671071597, 44.41317359984074], "geometry": {"coordinates": [8.887543671071597, 44.41317359984074], "type": "Point"}, "id": "35", "properties": {"fonte dato": 0, "n segnalaz": 5.0, "nome": "Stazione di Genova Sampierdarena", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.888018773915839, 44.414437544026185, 8.888018773915839, 44.414437544026185], "geometry": {"coordinates": [8.888018773915839, 44.414437544026185], "type": "Point"}, "id": "36", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Via Rolando", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.888610047553948, 44.41554048992692, 8.888610047553948, 44.41554048992692], "geometry": {"coordinates": [8.888610047553948, 44.41554048992692], "type": "Point"}, "id": "37", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Istituto Don Bosco", "soggetto": "studente scuola media", "testo": "campi sintetici che portano ad allagamenti"}, "type": "Feature"}, {"bbox": [8.88886178998991, 44.412058521137006, 8.88886178998991, 44.412058521137006], "geometry": {"coordinates": [8.88886178998991, 44.412058521137006], "type": "Point"}, "id": "38", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza Settembrini", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.888251772602127, 44.411868336562506, 8.888251772602127, 44.411868336562506], "geometry": {"coordinates": [8.888251772602127, 44.411868336562506], "type": "Point"}, "id": "39", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza Vittorio Veneto", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.884898571449412, 44.41417392510459, 8.884898571449412, 44.41417392510459], "geometry": {"coordinates": [8.884898571449412, 44.41417392510459], "type": "Point"}, "id": "40", "properties": {"fonte dato": 0, "n segnalaz": 4.0, "nome": "Via Eustachio Degola", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.891504490303376, 44.412292103106005, 8.891504490303376, 44.412292103106005], "geometry": {"coordinates": [8.891504490303376, 44.412292103106005], "type": "Point"}, "id": "41", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Via Cantore", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.889309540940323, 44.41058308558863, 8.889309540940323, 44.41058308558863], "geometry": {"coordinates": [8.889309540940323, 44.41058308558863], "type": "Point"}, "id": "42", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza del Monastero (scuola)", "soggetto": "studente scuola media", "testo": "allagamenti fuori scuola"}, "type": "Feature"}, {"bbox": [8.878486726468825, 44.41564754420672, 8.878486726468825, 44.41564754420672], "geometry": {"coordinates": [8.878486726468825, 44.41564754420672], "type": "Point"}, "id": "43", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Cornigliano", "soggetto": "studente scuola media", "testo": "alluvione del 2014, ha colpito soprattutto: Via Cornigliano - sottopassaggio Piazza Maeseno - sottopassaggio questura Polizia"}, "type": "Feature"}, {"bbox": [8.888436822247726, 44.412886765806746, 8.888436822247726, 44.412886765806746], "geometry": {"coordinates": [8.888436822247726, 44.412886765806746], "type": "Point"}, "id": "44", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza Montano", "soggetto": "studente scuola media", "testo": "sottopassaggio spesso allagato"}, "type": "Feature"}, {"bbox": [8.887118170980782, 44.41631994404156, 8.887118170980782, 44.41631994404156], "geometry": {"coordinates": [8.887118170980782, 44.41631994404156], "type": "Point"}, "id": "45", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Via Rolando", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.889200989222426, 44.410567580792026, 8.889200989222426, 44.410567580792026], "geometry": {"coordinates": [8.889200989222426, 44.410567580792026], "type": "Point"}, "id": "46", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Piazza del Monastero (scuola)", "soggetto": "studente scuola media", "testo": "palestra inagibile perch\u00e8 sempre allagata a causa di un pozzo chiuso"}, "type": "Feature"}, {"bbox": [8.889228923503566, 44.41101104828468, 8.889228923503566, 44.41101104828468], "geometry": {"coordinates": [8.889228923503566, 44.41101104828468], "type": "Point"}, "id": "47", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Vico della Catena", "soggetto": "studente scuola media", "testo": "sporcizia in strada di propriet\u00e0 delle Poste"}, "type": "Feature"}, {"bbox": [8.888213339245192, 44.41545476965335, 8.888213339245192, 44.41545476965335], "geometry": {"coordinates": [8.888213339245192, 44.41545476965335], "type": "Point"}, "id": "48", "properties": {"fonte dato": 0, "n segnalaz": 8.0, "nome": "Don Bosco", "soggetto": "studente scuola media", "testo": "Campo in erba sintetica"}, "type": "Feature"}, {"bbox": [8.887772154587026, 44.41292775867674, 8.887772154587026, 44.41292775867674], "geometry": {"coordinates": [8.887772154587026, 44.41292775867674], "type": "Point"}, "id": "49", "properties": {"fonte dato": 0, "n segnalaz": 4.0, "nome": "Stazione Genova Sampierdarena", "soggetto": "studente scuola media", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.889550416548893, 44.416159012042066, 8.889550416548893, 44.416159012042066], "geometry": {"coordinates": [8.889550416548893, 44.416159012042066], "type": "Point"}, "id": "50", "properties": {"fonte dato": 0, "n segnalaz": 3.0, "nome": "Via Nicol\u00f2 Ardoino", "soggetto": "studente scuola media", "testo": "strada in stato di abbandono"}, "type": "Feature"}, {"bbox": [8.895858007864451, 44.41371270114503, 8.895858007864451, 44.41371270114503], "geometry": {"coordinates": [8.895858007864451, 44.41371270114503], "type": "Point"}, "id": "51", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso Onofrio Scassi", "soggetto": "studente scuola superiore", "testo": "Zona allagabile"}, "type": "Feature"}, {"bbox": [8.890628407866807, 44.41572320114523, 8.890628407866807, 44.41572320114523], "geometry": {"coordinates": [8.890628407866807, 44.41572320114523], "type": "Point"}, "id": "52", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Sasso", "soggetto": "studente scuola superiore", "testo": "Segnalazione di danno"}, "type": "Feature"}, {"bbox": [8.888670207867282, 44.41319650114561, 8.888670207867282, 44.41319650114561], "geometry": {"coordinates": [8.888670207867282, 44.41319650114561], "type": "Point"}, "id": "53", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Piazza Montano", "soggetto": "studente scuola superiore", "testo": "Sottopassaggio"}, "type": "Feature"}, {"bbox": [8.891015507866497, 44.41448660114532, 8.891015507866497, 44.41448660114532], "geometry": {"coordinates": [8.891015507866497, 44.41448660114532], "type": "Point"}, "id": "54", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Monti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.890919907866461, 44.413869401145384, 8.890919907866461, 44.413869401145384], "geometry": {"coordinates": [8.890919907866461, 44.413869401145384], "type": "Point"}, "id": "55", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via L.C. Farini", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.892307607866115, 44.41555700114514, 8.892307607866115, 44.41555700114514], "geometry": {"coordinates": [8.892307607866115, 44.41555700114514], "type": "Point"}, "id": "56", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via dei Landi", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.888216007867562, 44.41399840114556, 8.888216007867562, 44.41399840114556], "geometry": {"coordinates": [8.888216007867562, 44.41399840114556], "type": "Point"}, "id": "57", "properties": {"fonte dato": 1, "n segnalaz": 9.0, "nome": "Via Rolando", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.888347407867487, 44.41375700114558, 8.888347407867487, 44.41375700114558], "geometry": {"coordinates": [8.888347407867487, 44.41375700114558], "type": "Point"}, "id": "58", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Rolando", "soggetto": "studente scuola superiore", "testo": "Caditoioa occlusa"}, "type": "Feature"}, {"bbox": [8.892163007866156, 44.415456801145154, 8.892163007866156, 44.415456801145154], "geometry": {"coordinates": [8.892163007866156, 44.415456801145154], "type": "Point"}, "id": "59", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via dei Landi", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.890832007866516, 44.414066301145375, 8.890832007866516, 44.414066301145375], "geometry": {"coordinates": [8.890832007866516, 44.414066301145375], "type": "Point"}, "id": "60", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via L.C. Farini", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.888601207867353, 44.413532501145596, 8.888601207867353, 44.413532501145596], "geometry": {"coordinates": [8.888601207867353, 44.413532501145596], "type": "Point"}, "id": "61", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Rolando", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.89140330786645, 44.41532420114524, 8.89140330786645, 44.41532420114524], "geometry": {"coordinates": [8.89140330786645, 44.41532420114524], "type": "Point"}, "id": "62", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Monti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.89101550786625, 44.41249040114551, 8.89101550786625, 44.41249040114551], "geometry": {"coordinates": [8.89101550786625, 44.41249040114551], "type": "Point"}, "id": "63", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Cantore", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.891649107865966, 44.41233560114546, 8.891649107865966, 44.41233560114546], "geometry": {"coordinates": [8.891649107865966, 44.41233560114546], "type": "Point"}, "id": "64", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Nino Ronco", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.891935007866092, 44.41419750114529, 8.891935007866092, 44.41419750114529], "geometry": {"coordinates": [8.891935007866092, 44.41419750114529], "type": "Point"}, "id": "65", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Monti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.894128007865143, 44.413655101145196, 8.894128007865143, 44.413655101145196], "geometry": {"coordinates": [8.894128007865143, 44.413655101145196], "type": "Point"}, "id": "66", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Martinetti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.892223007865956, 44.41405050114529, 8.892223007865956, 44.41405050114529], "geometry": {"coordinates": [8.892223007865956, 44.41405050114529], "type": "Point"}, "id": "67", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Monti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.893348407865235, 44.41187730114538, 8.893348407865235, 44.41187730114538], "geometry": {"coordinates": [8.893348407865235, 44.41187730114538], "type": "Point"}, "id": "68", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Inferiore Salvator Rosa", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.895643007864923, 44.416764301144795, 8.895643007864923, 44.416764301144795], "geometry": {"coordinates": [8.895643007864923, 44.416764301144795], "type": "Point"}, "id": "69", "properties": {"fonte dato": 1, "n segnalaz": 6.0, "nome": "Via L.A.  Martinetti", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.888957807867158, 44.41315730114559, 8.888957807867158, 44.41315730114559], "geometry": {"coordinates": [8.888957807867158, 44.41315730114559], "type": "Point"}, "id": "70", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Rolando", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.89490470786483, 44.413669801145126, 8.89490470786483, 44.413669801145126], "geometry": {"coordinates": [8.89490470786483, 44.413669801145126], "type": "Point"}, "id": "71", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.889511707866912, 44.41295300114558, 8.889511707866912, 44.41295300114558], "geometry": {"coordinates": [8.889511707866912, 44.41295300114558], "type": "Point"}, "id": "72", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via V.  Alfieri", "soggetto": "studente scuola superiore", "testo": "Sottopassaggio"}, "type": "Feature"}, {"bbox": [8.89470560786492, 44.41374970114512, 8.89470560786492, 44.41374970114512], "geometry": {"coordinates": [8.89470560786492, 44.41374970114512], "type": "Point"}, "id": "73", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Vsco da Gama", "soggetto": "studente scuola superiore", "testo": "Allagamento locale"}, "type": "Feature"}, {"bbox": [8.894384607865058, 44.41383110114514, 8.894384607865058, 44.41383110114514], "geometry": {"coordinates": [8.894384607865058, 44.41383110114514], "type": "Point"}, "id": "74", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Ponte Giovanni Rebora", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.89539870786464, 44.41374320114507, 8.89539870786464, 44.41374320114507], "geometry": {"coordinates": [8.89539870786464, 44.41374320114507], "type": "Point"}, "id": "75", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F. Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.89533900786464, 44.41354880114511, 8.89533900786464, 44.41354880114511], "geometry": {"coordinates": [8.89533900786464, 44.41354880114511], "type": "Point"}, "id": "76", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Allagamento locale"}, "type": "Feature"}, {"bbox": [8.89591830786445, 44.41388190114504, 8.89591830786445, 44.41388190114504], "geometry": {"coordinates": [8.89591830786445, 44.41388190114504], "type": "Point"}, "id": "77", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897041607863745, 44.41189540114512, 8.897041607863745, 44.41189540114512], "geometry": {"coordinates": [8.897041607863745, 44.41189540114512], "type": "Point"}, "id": "78", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B.  Botteri", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897016407863996, 44.413790101144954, 8.897016407863996, 44.413790101144954], "geometry": {"coordinates": [8.897016407863996, 44.413790101144954], "type": "Point"}, "id": "79", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.895440807864604, 44.413580101145094, 8.895440807864604, 44.413580101145094], "geometry": {"coordinates": [8.895440807864604, 44.413580101145094], "type": "Point"}, "id": "80", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897247007863688, 44.412094201145074, 8.897247007863688, 44.412094201145074], "geometry": {"coordinates": [8.897247007863688, 44.412094201145074], "type": "Point"}, "id": "81", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B.  Botteri", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.895966007864308, 44.4129331011451, 8.895966007864308, 44.4129331011451], "geometry": {"coordinates": [8.895966007864308, 44.4129331011451], "type": "Point"}, "id": "82", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.89652890786412, 44.41320040114505, 8.89652890786412, 44.41320040114505], "geometry": {"coordinates": [8.89652890786412, 44.41320040114505], "type": "Point"}, "id": "83", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.895960007864296, 44.412827701145105, 8.895960007864296, 44.412827701145105], "geometry": {"coordinates": [8.895960007864296, 44.412827701145105], "type": "Point"}, "id": "84", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897320607863678, 44.41225220114507, 8.897320607863678, 44.41225220114507], "geometry": {"coordinates": [8.897320607863678, 44.41225220114507], "type": "Point"}, "id": "85", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Onofrio Scassi", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.896277207864193, 44.41299360114507, 8.896277207864193, 44.41299360114507], "geometry": {"coordinates": [8.896277207864193, 44.41299360114507], "type": "Point"}, "id": "86", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso F.  Magellano", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897176107863755, 44.41238640114506, 8.897176107863755, 44.41238640114506], "geometry": {"coordinates": [8.897176107863755, 44.41238640114506], "type": "Point"}, "id": "87", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Corso Onofrio Scassi", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897291307863593, 44.41148560114516, 8.897291307863593, 44.41148560114516], "geometry": {"coordinates": [8.897291307863593, 44.41148560114516], "type": "Point"}, "id": "88", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Piovera", "soggetto": "studente scuola superiore", "testo": "Caditoia occluso"}, "type": "Feature"}, {"bbox": [8.897164607863724, 44.412083401145104, 8.897164607863724, 44.412083401145104], "geometry": {"coordinates": [8.897164607863724, 44.412083401145104], "type": "Point"}, "id": "89", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B.  Botteri", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.896945807863814, 44.4121182011451, 8.896945807863814, 44.4121182011451], "geometry": {"coordinates": [8.896945807863814, 44.4121182011451], "type": "Point"}, "id": "90", "properties": {"fonte dato": 1, "n segnalaz": 9.0, "nome": "Via G.B. Botteri", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897300307863647, 44.4119453011451, 8.897300307863647, 44.4119453011451], "geometry": {"coordinates": [8.897300307863647, 44.4119453011451], "type": "Point"}, "id": "91", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.B. Botteri", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.897380807863634, 44.41208330114508, 8.897380807863634, 44.41208330114508], "geometry": {"coordinates": [8.897380807863634, 44.41208330114508], "type": "Point"}, "id": "92", "properties": {"fonte dato": 1, "n segnalaz": 6.0, "nome": "Via G.B. Botteri", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.89477670786447, 44.410395701145404, 8.89477670786447, 44.410395701145404], "geometry": {"coordinates": [8.89477670786447, 44.410395701145404], "type": "Point"}, "id": "93", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via A.  Albini", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.896640307863803, 44.41108920114518, 8.896640307863803, 44.41108920114518], "geometry": {"coordinates": [8.896640307863803, 44.41108920114518], "type": "Point"}, "id": "94", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via G.  Pittaluga", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.890578807866447, 44.412667101145516, 8.890578807866447, 44.412667101145516], "geometry": {"coordinates": [8.890578807866447, 44.412667101145516], "type": "Point"}, "id": "95", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Cantore", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.89647560786371, 44.409789201145344, 8.89647560786371, 44.409789201145344], "geometry": {"coordinates": [8.89647560786371, 44.409789201145344], "type": "Point"}, "id": "96", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Palazzo delle Fortezza", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.893403007865002, 44.41024950114552, 8.893403007865002, 44.41024950114552], "geometry": {"coordinates": [8.893403007865002, 44.41024950114552], "type": "Point"}, "id": "97", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via V.  Gioberti", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.893421307864967, 44.41004510114552, 8.893421307864967, 44.41004510114552], "geometry": {"coordinates": [8.893421307864967, 44.41004510114552], "type": "Point"}, "id": "98", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.893333407865002, 44.41001620114556, 8.893333407865002, 44.41001620114556], "geometry": {"coordinates": [8.893333407865002, 44.41001620114556], "type": "Point"}, "id": "99", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.89555020786405, 44.40949600114544, 8.89555020786405, 44.40949600114544], "geometry": {"coordinates": [8.89555020786405, 44.40949600114544], "type": "Point"}, "id": "100", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via R. Pensa", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.893113407865101, 44.410098601145535, 8.893113407865101, 44.410098601145535], "geometry": {"coordinates": [8.893113407865101, 44.410098601145535], "type": "Point"}, "id": "101", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.894698407864455, 44.41004790114544, 8.894698407864455, 44.41004790114544], "geometry": {"coordinates": [8.894698407864455, 44.41004790114544], "type": "Point"}, "id": "102", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via A. Albini", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.890999907866073, 44.41103750114565, 8.890999907866073, 44.41103750114565], "geometry": {"coordinates": [8.890999907866073, 44.41103750114565], "type": "Point"}, "id": "103", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via della Cella", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti\t\t\tsuperiori"}, "type": "Feature"}, {"bbox": [8.893333407865002, 44.41001620114556, 8.893333407865002, 44.41001620114556], "geometry": {"coordinates": [8.893333407865002, 44.41001620114556], "type": "Point"}, "id": "104", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.89015510786641, 44.41106400114568, 8.89015510786641, 44.41106400114568], "geometry": {"coordinates": [8.89015510786641, 44.41106400114568], "type": "Point"}, "id": "105", "properties": {"fonte dato": 1, "n segnalaz": 6.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti\t\t\tsuperiori"}, "type": "Feature"}, {"bbox": [8.897159907863475, 44.41012960114525, 8.897159907863475, 44.41012960114525], "geometry": {"coordinates": [8.897159907863475, 44.41012960114525], "type": "Point"}, "id": "106", "properties": {"fonte dato": 1, "n segnalaz": 6.0, "nome": "Via G. Malinverni", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.893333407865002, 44.41001620114556, 8.893333407865002, 44.41001620114556], "geometry": {"coordinates": [8.893333407865002, 44.41001620114556], "type": "Point"}, "id": "107", "properties": {"fonte dato": 1, "n segnalaz": 3.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Caditoia occlusa"}, "type": "Feature"}, {"bbox": [8.888591807867265, 44.412800101145656, 8.888591807867265, 44.412800101145656], "geometry": {"coordinates": [8.888591807867265, 44.412800101145656], "type": "Point"}, "id": "108", "properties": {"fonte dato": 1, "n segnalaz": 9.0, "nome": "Sottopassaggio", "soggetto": "studente scuola superiore", "testo": "Zona soggetta ad allagamenti frequenti"}, "type": "Feature"}, {"bbox": [8.896775707863473, 44.4088601011454, 8.896775707863473, 44.4088601011454], "geometry": {"coordinates": [8.896775707863473, 44.4088601011454], "type": "Point"}, "id": "109", "properties": {"fonte dato": 1, "n segnalaz": 9.0, "nome": "Via Buranello", "soggetto": "studente scuola superiore", "testo": "Caditoioa occlusa"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_54831a33fac70405cb74fc7571ee7f8f.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["nome", "n segnalaz", "testo", "fonte dato"];
+    let aliases = ["nome", "n segnalaz", "testo", "fonte dato"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_54831a33fac70405cb74fc7571ee7f8f.addTo(feature_group_7887a6ea70d45f8ffae61de800c34c6a);
+        
+    
+            feature_group_7887a6ea70d45f8ffae61de800c34c6a.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_007c5bf8f0565788711b272db26817bd = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_0a3f66179417f507fe637efc87533429_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "blue", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_0a3f66179417f507fe637efc87533429_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0a3f66179417f507fe637efc87533429 = L.geoJson(null, {
+                onEachFeature: geo_json_0a3f66179417f507fe637efc87533429_onEachFeature,
+            
+                style: geo_json_0a3f66179417f507fe637efc87533429_styler,
+        });
+
+        function geo_json_0a3f66179417f507fe637efc87533429_add (data) {
+            geo_json_0a3f66179417f507fe637efc87533429
+                .addData(data);
+        }
+            geo_json_0a3f66179417f507fe637efc87533429_add({"bbox": [8.87803322652031, 44.40475582655275, 8.900175130395382, 44.419208130464824], "features": [{"bbox": [8.878885014179074, 44.40475582655275, 8.881932851514948, 44.40884323300612], "geometry": {"coordinates": [[[8.881932851514948, 44.40475582655275], [8.879578920802212, 44.40517507427686], [8.878885014179074, 44.40884323300612], [8.881121265150908, 44.4085082194721], [8.881932851514948, 44.40475582655275]]], "type": "Polygon"}, "id": "0", "properties": {"n segnalaz": 1, "nome": "Calata Nino Ronco", "testo": "Rimepimento con depositi fluviali degli anni 2000/2010, c\u0027\u00e8 l\u0027intenzione di sigillare tutto il porto"}, "type": "Feature"}, {"bbox": [8.87803322652031, 44.40862845228511, 8.881977891063341, 44.4112941788128], "geometry": {"coordinates": [[[8.87803322652031, 44.409214607948655], [8.878163760014372, 44.410291485448354], [8.878505684282834, 44.41109639908823], [8.878763995820776, 44.411259397175314], [8.879235346644151, 44.4112941788128], [8.87985773043098, 44.41097651426115], [8.88153226499043, 44.41065504826854], [8.881782541061128, 44.41050054087663], [8.881977891063341, 44.41018056602381], [8.881511454356895, 44.40862845228511], [8.87803322652031, 44.409214607948655]]], "type": "Polygon"}, "id": "1", "properties": {"n segnalaz": 1, "nome": "Terminal Messina", "testo": "Zona depressa"}, "type": "Feature"}, {"bbox": [8.884558429428179, 44.41222053529091, 8.88796552168487, 44.413662915686125], "geometry": {"coordinates": [[[8.887803117422191, 44.41222053529091], [8.88670689347844, 44.41278680112414], [8.885925520667024, 44.41313575808536], [8.885252721575167, 44.413407099805276], [8.884558429428179, 44.41357738064822], [8.884601633111854, 44.413662915686125], [8.885339237460965, 44.41352376592783], [8.887086351024866, 44.41281049379633], [8.88796552168487, 44.41234504612642], [8.887803117422191, 44.41222053529091]]], "type": "Polygon"}, "id": "2", "properties": {"n segnalaz": 2, "nome": "Via Dondero", "testo": "Nei garage interrati sono state installate delle pedane per il sollevamento delle auto sopra i 150 cm"}, "type": "Feature"}, {"bbox": [8.887760039292438, 44.41506425370488, 8.888928917269967, 44.41587342442344], "geometry": {"coordinates": [[[8.8887166001151, 44.41587342442344], [8.888928917269967, 44.41544771979881], [8.888616747734439, 44.41541853949775], [8.888677590375545, 44.41520203359951], [8.888043334744543, 44.41506425370488], [8.887760039292438, 44.4157353275422], [8.8887166001151, 44.41587342442344]]], "type": "Polygon"}, "id": "3", "properties": {"n segnalaz": 1, "nome": "Don Bosco", "testo": "Campi sintetici, quindi completamente impermeabili"}, "type": "Feature"}, {"bbox": [8.885390694426079, 44.415516735856556, 8.886165798846037, 44.41693893733312], "geometry": {"coordinates": [[[8.885390694426079, 44.41689220449444], [8.885705164333071, 44.41693893733312], [8.886165798846037, 44.41556678754759], [8.885846716607565, 44.415516735856556], [8.885549103354084, 44.41631546929386], [8.885390694426079, 44.41689220449444]]], "type": "Polygon"}, "id": "4", "properties": {"n segnalaz": 3, "nome": "Via reti", "testo": "Giardini pubblici pavimentati con materiali impermeabili"}, "type": "Feature"}, {"bbox": [8.885830755835833, 44.41582864106929, 8.886609141779592, 44.41667434251993], "geometry": {"coordinates": [[[8.886132882727514, 44.41584193999589], [8.886095902081799, 44.41582864106929], [8.885974965491735, 44.41617001510656], [8.885830755835833, 44.41658430635173], [8.886348679017035, 44.41667434251993], [8.886609141779592, 44.41594519527226], [8.886132882727514, 44.41584193999589]]], "type": "Polygon"}, "id": "5", "properties": {"n segnalaz": 1, "nome": "Scuola Superiore Mazzini", "testo": "Presenza di pompe nei locali interrati"}, "type": "Feature"}, {"bbox": [8.889214427013316, 44.41320090766287, 8.89116025691394, 44.41414941335498], "geometry": {"coordinates": [[[8.889317054823323, 44.41320090766287], [8.889214427013316, 44.41327426859532], [8.891057599498945, 44.41414941335498], [8.89116025691394, 44.41405972620112], [8.889317054823323, 44.41320090766287]]], "type": "Polygon"}, "id": "6", "properties": {"n segnalaz": 2, "nome": "Via GB Monti", "testo": "Allagamenti frequenti \"diventa un fiume quando piove\""}, "type": "Feature"}, {"bbox": [8.884580062132391, 44.4088803654761, 8.89962516338432, 44.41378501204193], "geometry": {"coordinates": [[[8.884580286171527, 44.41367144232522], [8.884580062132391, 44.41378501204193], [8.885768958889761, 44.41351364289654], [8.887227905350805, 44.41287910524579], [8.88829062237529, 44.41228958886999], [8.890098640215118, 44.41136007434236], [8.891398814098416, 44.410850256825746], [8.895377992104741, 44.409559284568715], [8.89626576437534, 44.40926481484195], [8.896852259662262, 44.40910634967812], [8.897343530974544, 44.40903865170357], [8.898167456773086, 44.40900532067471], [8.899133836677693, 44.40905160904005], [8.899608968963609, 44.40915424207678], [8.89962516338432, 44.408949830288506], [8.898864770549114, 44.40889237226113], [8.898135987166464, 44.4088803654761], [8.897058466343106, 44.408970252274585], [8.896392795151707, 44.409105932467256], [8.890891697900093, 44.41090655702789], [8.889901514337613, 44.411317509902034], [8.889348492282593, 44.41158870493545], [8.888734958387051, 44.41192659996747], [8.887117146414356, 44.412799496535655], [8.885356949898474, 44.413535942872855], [8.884580286171527, 44.41367144232522]]], "type": "Polygon"}, "id": "7", "properties": {"n segnalaz": 3, "nome": "Voltini stazione", "testo": "Continui gocciolamenti a causa dei quali molte attivit\u00e0 hanno chiuso,  le attivit\u00e0 presenti hanno paratie anti acqua, \"dove confluisce l\u0027acqua raccolta dal manto dei binari?\""}, "type": "Feature"}, {"bbox": [8.889340806744375, 44.41049762070595, 8.898464977829308, 44.412927785464284], "geometry": {"coordinates": [[[8.898448301472543, 44.41049762070595], [8.895036128329842, 44.41144721184281], [8.894408891903442, 44.411614400431716], [8.893422338941653, 44.41170934897993], [8.889340806744375, 44.412903802328835], [8.889357480058575, 44.412927785464284], [8.893436827131792, 44.41173271680826], [8.89440883782586, 44.411644359055565], [8.898464977829308, 44.410521602524916], [8.898448301472543, 44.41049762070595]]], "type": "Polygon"}, "id": "8", "properties": {"n segnalaz": 3, "nome": "Via Cantore", "testo": "Aiuola hanno cordolo rialzato e sono sono direttamente comunicanti con il terreno sottostante"}, "type": "Feature"}, {"bbox": [8.89313398428434, 44.413577562427115, 8.897116160855193, 44.419208130464824], "geometry": {"coordinates": [[[8.894575511369212, 44.417430447149734], [8.894938703225359, 44.41870635579347], [8.895176270950257, 44.41915074741582], [8.895652900719275, 44.419208130464824], [8.89638457568083, 44.41882157129505], [8.897116160855193, 44.41848056350321], [8.896640038797626, 44.41813846092626], [8.896338659203336, 44.41783068271899], [8.896396564885098, 44.41655644591139], [8.896070962040433, 44.41601312957156], [8.895863327533498, 44.41524522242692], [8.89556376117724, 44.41475810278252], [8.895655848765958, 44.41439305325928], [8.894612337915511, 44.413577562427115], [8.8945077064428, 44.41365236481451], [8.894219748409977, 44.41397978200828], [8.8936709173635, 44.4141009821151], [8.89348733102221, 44.414494031725035], [8.89313398428434, 44.41495767991133], [8.893228429784122, 44.41544749765168], [8.893847852049023, 44.41560752352455], [8.89421258245124, 44.41601786873557], [8.894575511369212, 44.417430447149734]]], "type": "Polygon"}, "id": "9", "properties": {"n segnalaz": 2, "nome": "Belvedere", "testo": "Urbanizzazione degli anni \u002760"}, "type": "Feature"}, {"bbox": [8.88243612817708, 44.4123371527827, 8.88426663284039, 44.41345943790798], "geometry": {"coordinates": [[[8.882462322955881, 44.41318457838458], [8.88243612817708, 44.41321576911537], [8.882601142734853, 44.41345943790798], [8.882923614507213, 44.41337236011053], [8.883002285583885, 44.41323508278243], [8.882898044661266, 44.41309137392045], [8.88331651798041, 44.41291074037079], [8.883472874396976, 44.41312942483238], [8.883838908785137, 44.41303614545545], [8.88383063198369, 44.41281761263297], [8.883769831198716, 44.412730140843735], [8.88390081257472, 44.41256794203871], [8.884083388723706, 44.41274294752632], [8.88426663284039, 44.41258080148412], [8.884119034945437, 44.4123371527827], [8.883866242823368, 44.41243054860037], [8.883708918914897, 44.4126988608929], [8.882462322955881, 44.41318457838458]]], "type": "Polygon"}, "id": "10", "properties": {"n segnalaz": 2, "nome": "Torri Fiumara", "testo": "Urbanizzazione degli anni \u002790, hanno garage sotterrameni di 2 livelli sotto il piano strada"}, "type": "Feature"}, {"bbox": [8.899003396635717, 44.41276521463138, 8.899750125521475, 44.41306013423047], "geometry": {"coordinates": [[[8.899690754402432, 44.41276521463138], [8.899003396635717, 44.41288024605203], [8.89900906131923, 44.41306013423047], [8.899164434346163, 44.41305170609893], [8.899319925296062, 44.41297475094543], [8.899606673960369, 44.41301355058257], [8.899750125521475, 44.4129879794112], [8.899690754402432, 44.41276521463138]]], "type": "Polygon"}, "id": "11", "properties": {"n segnalaz": 2, "nome": "Rio Fossato", "testo": "Area critica per creazione continua di pozzanghere"}, "type": "Feature"}, {"bbox": [8.888454352333262, 44.411906570942215, 8.889132930157222, 44.41236736523604], "geometry": {"coordinates": [[[8.888454352333262, 44.41227575704948], [8.888498397210585, 44.41236736523604], [8.889132930157222, 44.41198763764145], [8.889064298372963, 44.411906570942215], [8.888454352333262, 44.41227575704948]]], "type": "Polygon"}, "id": "12", "properties": {"n segnalaz": 2, "nome": "Piazza Settembrini", "testo": "Giardini asfaltati, i negozi sono attrezzati con paratie anti acqua"}, "type": "Feature"}, {"bbox": [8.888866319629642, 44.41146378172016, 8.900175130395382, 44.417821674877985], "geometry": {"coordinates": [[[8.889252713807762, 44.41712448175214], [8.888866319629642, 44.417821674877985], [8.889076722078572, 44.417726456776606], [8.889896906018713, 44.41755649537936], [8.890492888219336, 44.41736622358484], [8.890984243705349, 44.416914690152296], [8.89151715990838, 44.41671933031728], [8.891888897020312, 44.416528837343286], [8.892113128362443, 44.4165290500271], [8.892540458640514, 44.41658972146003], [8.892792875660584, 44.41650458069181], [8.893361166103375, 44.41611839898963], [8.893166460287611, 44.41529958513237], [8.893145501098465, 44.41495944195159], [8.893486971785988, 44.41449736767442], [8.893659336597656, 44.414084412952796], [8.894201316402365, 44.41397900938122], [8.894487533720536, 44.413675670651386], [8.89485234960987, 44.413485372866596], [8.895394902586812, 44.4130551780817], [8.895956746619452, 44.41285093647119], [8.896380780443456, 44.412590082204446], [8.90015528523977, 44.411548491141545], [8.900175130395382, 44.41146378172016], [8.8963119274576, 44.41253353497672], [8.895956922447043, 44.41275208869093], [8.895414729877123, 44.41298459062767], [8.89438437107224, 44.41371208351513], [8.893625407230804, 44.41403507892875], [8.89268790519814, 44.41413192054041], [8.892159742051055, 44.414426870369354], [8.891986223570969, 44.414639429049316], [8.891721712034931, 44.41501735229399], [8.891655233386281, 44.41530091989646], [8.891349484475834, 44.41568471196431], [8.890169124622533, 44.416445837318676], [8.890020381681019, 44.41662887195927], [8.88974765974477, 44.41697723769971], [8.889252713807762, 44.41712448175214]]], "type": "Polygon"}, "id": "13", "properties": {"n segnalaz": 3, "nome": "Quota 40", "testo": "40 m sul livello del mare"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_0a3f66179417f507fe637efc87533429.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["nome", "n segnalaz", "testo"];
+    let aliases = ["nome", "n segnalaz", "testo"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_0a3f66179417f507fe637efc87533429.addTo(feature_group_007c5bf8f0565788711b272db26817bd);
+        
+    
+            feature_group_007c5bf8f0565788711b272db26817bd.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_62da4e44ee28e77a49edd5fe0b2b574b = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_1a7a448e5827fdb1726b84da81f582a8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "fillColor": "green", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_1a7a448e5827fdb1726b84da81f582a8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1a7a448e5827fdb1726b84da81f582a8 = L.geoJson(null, {
+                onEachFeature: geo_json_1a7a448e5827fdb1726b84da81f582a8_onEachFeature,
+            
+                style: geo_json_1a7a448e5827fdb1726b84da81f582a8_styler,
+        });
+
+        function geo_json_1a7a448e5827fdb1726b84da81f582a8_add (data) {
+            geo_json_1a7a448e5827fdb1726b84da81f582a8
+                .addData(data);
+        }
+            geo_json_1a7a448e5827fdb1726b84da81f582a8_add({"bbox": [8.881989576784491, 44.41093648171922, 8.896336317603174, 44.41660859724238], "features": [{"bbox": [8.888800196469177, 44.41569387485051, 8.888800196469177, 44.41569387485051], "geometry": {"coordinates": [8.888800196469177, 44.41569387485051], "type": "Point"}, "id": "0", "properties": {"fonte dato": 1, "frequenza": 5, "luogo": "Don Bosco"}, "type": "Feature"}, {"bbox": [8.881989576784491, 44.41283253604592, 8.881989576784491, 44.41283253604592], "geometry": {"coordinates": [8.881989576784491, 44.41283253604592], "type": "Point"}, "id": "1", "properties": {"fonte dato": 1, "frequenza": 4, "luogo": "Fiumara"}, "type": "Feature"}, {"bbox": [8.888619747954104, 44.41660859724238, 8.888619747954104, 44.41660859724238], "geometry": {"coordinates": [8.888619747954104, 44.41660859724238], "type": "Point"}, "id": "2", "properties": {"fonte dato": 1, "frequenza": 3, "luogo": "Via Ulanowski"}, "type": "Feature"}, {"bbox": [8.889646690762817, 44.41477479257942, 8.889646690762817, 44.41477479257942], "geometry": {"coordinates": [8.889646690762817, 44.41477479257942], "type": "Point"}, "id": "3", "properties": {"fonte dato": 1, "frequenza": 5, "luogo": "Via Cristofoli"}, "type": "Feature"}, {"bbox": [8.896336317603174, 44.41187260299623, 8.896336317603174, 44.41187260299623], "geometry": {"coordinates": [8.896336317603174, 44.41187260299623], "type": "Point"}, "id": "4", "properties": {"fonte dato": 1, "frequenza": 1, "luogo": "Corso Scassi"}, "type": "Feature"}, {"bbox": [8.88626664533392, 44.416317461213566, 8.88626664533392, 44.416317461213566], "geometry": {"coordinates": [8.88626664533392, 44.416317461213566], "type": "Point"}, "id": "5", "properties": {"fonte dato": 1, "frequenza": 3, "luogo": "Via Rodi"}, "type": "Feature"}, {"bbox": [8.895853591426624, 44.41093648171922, 8.895853591426624, 44.41093648171922], "geometry": {"coordinates": [8.895853591426624, 44.41093648171922], "type": "Point"}, "id": "6", "properties": {"fonte dato": 1, "frequenza": 3, "luogo": "Scuola Media Via Cantore"}, "type": "Feature"}, {"bbox": [8.883953326027969, 44.41597728334929, 8.883953326027969, 44.41597728334929], "geometry": {"coordinates": [8.883953326027969, 44.41597728334929], "type": "Point"}, "id": "7", "properties": {"fonte dato": 1, "frequenza": 2, "luogo": "Scuola Gobetti"}, "type": "Feature"}, {"bbox": [8.88253932214346, 44.41592976413282, 8.88253932214346, 44.41592976413282], "geometry": {"coordinates": [8.88253932214346, 44.41592976413282], "type": "Point"}, "id": "8", "properties": {"fonte dato": 1, "frequenza": 2, "luogo": "Centro sportivo Crocera"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1a7a448e5827fdb1726b84da81f582a8.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["luogo", "frequenza", "fonte dato"];
+    let aliases = ["luogo", "frequenza", "fonte dato"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_1a7a448e5827fdb1726b84da81f582a8.addTo(feature_group_62da4e44ee28e77a49edd5fe0b2b574b);
+        
+    
+            feature_group_62da4e44ee28e77a49edd5fe0b2b574b.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_284324f00a408768e9d7a3d422a670cc = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_c3e666f93e792c8dca636e3c200bfa52_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "yellow", "fillColor": "yellow", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_c3e666f93e792c8dca636e3c200bfa52_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c3e666f93e792c8dca636e3c200bfa52 = L.geoJson(null, {
+                onEachFeature: geo_json_c3e666f93e792c8dca636e3c200bfa52_onEachFeature,
+            
+                style: geo_json_c3e666f93e792c8dca636e3c200bfa52_styler,
+        });
+
+        function geo_json_c3e666f93e792c8dca636e3c200bfa52_add (data) {
+            geo_json_c3e666f93e792c8dca636e3c200bfa52
+                .addData(data);
+        }
+            geo_json_c3e666f93e792c8dca636e3c200bfa52_add({"bbox": [8.878949365166765, 44.40857995240256, 8.90751726708278, 44.4168973091372], "features": [{"bbox": [8.885851815767301, 44.4159966186985, 8.885851815767301, 44.4159966186985], "geometry": {"coordinates": [8.885851815767301, 44.4159966186985], "type": "Point"}, "id": "0", "properties": {"fonte dato": 3, "luogo": "Giardini Pavanello", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.888425551580863, 44.41290155363565, 8.888425551580863, 44.41290155363565], "geometry": {"coordinates": [8.888425551580863, 44.41290155363565], "type": "Point"}, "id": "1", "properties": {"fonte dato": 3, "luogo": "Piazza Montano", "n segnalaz": 16.0}, "type": "Feature"}, {"bbox": [8.887134560267198, 44.41460513753326, 8.887134560267198, 44.41460513753326], "geometry": {"coordinates": [8.887134560267198, 44.41460513753326], "type": "Point"}, "id": "2", "properties": {"fonte dato": 3, "luogo": "Rimessa via Reti", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.882461523251468, 44.41296282046603, 8.882461523251468, 44.41296282046603], "geometry": {"coordinates": [8.882461523251468, 44.41296282046603], "type": "Point"}, "id": "3", "properties": {"fonte dato": 3, "luogo": "Fiumara", "n segnalaz": 10.0}, "type": "Feature"}, {"bbox": [8.896409449302178, 44.41201996958521, 8.896409449302178, 44.41201996958521], "geometry": {"coordinates": [8.896409449302178, 44.41201996958521], "type": "Point"}, "id": "4", "properties": {"fonte dato": 3, "luogo": "Parco Villa Scassi", "n segnalaz": 3.0}, "type": "Feature"}, {"bbox": [8.90751726708278, 44.41179221923096, 8.90751726708278, 44.41179221923096], "geometry": {"coordinates": [8.90751726708278, 44.41179221923096], "type": "Point"}, "id": "5", "properties": {"fonte dato": 3, "luogo": "Matitone", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.88825531735139, 44.4139626159827, 8.88825531735139, 44.4139626159827], "geometry": {"coordinates": [8.88825531735139, 44.4139626159827], "type": "Point"}, "id": "6", "properties": {"fonte dato": 3, "luogo": "Via Rolando", "n segnalaz": 4.0}, "type": "Feature"}, {"bbox": [8.89317988038017, 44.410222841564924, 8.89317988038017, 44.410222841564924], "geometry": {"coordinates": [8.89317988038017, 44.410222841564924], "type": "Point"}, "id": "7", "properties": {"fonte dato": 3, "luogo": "Via Buranello", "n segnalaz": 3.0}, "type": "Feature"}, {"bbox": [8.89116979469658, 44.41089124026275, 8.89116979469658, 44.41089124026275], "geometry": {"coordinates": [8.89116979469658, 44.41089124026275], "type": "Point"}, "id": "8", "properties": {"fonte dato": 3, "luogo": "Binari", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.893436764348591, 44.41173155589457, 8.893436764348591, 44.41173155589457], "geometry": {"coordinates": [8.893436764348591, 44.41173155589457], "type": "Point"}, "id": "9", "properties": {"fonte dato": 3, "luogo": "Via Cantore", "n segnalaz": 16.0}, "type": "Feature"}, {"bbox": [8.892743187682125, 44.408660590235236, 8.892743187682125, 44.408660590235236], "geometry": {"coordinates": [8.892743187682125, 44.408660590235236], "type": "Point"}, "id": "10", "properties": {"fonte dato": 3, "luogo": "Lungomare Canepa", "n segnalaz": 3.0}, "type": "Feature"}, {"bbox": [8.89567934426489, 44.40857995240256, 8.89567934426489, 44.40857995240256], "geometry": {"coordinates": [8.89567934426489, 44.40857995240256], "type": "Point"}, "id": "11", "properties": {"fonte dato": 3, "luogo": "Via San Pier D\u0027Arena", "n segnalaz": 4.0}, "type": "Feature"}, {"bbox": [8.894672993500576, 44.41119252599683, 8.894672993500576, 44.41119252599683], "geometry": {"coordinates": [8.894672993500576, 44.41119252599683], "type": "Point"}, "id": "12", "properties": {"fonte dato": 3, "luogo": "Via Nicol\u00f2 Daste", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.888912165615643, 44.4168973091372, 8.888912165615643, 44.4168973091372], "geometry": {"coordinates": [8.888912165615643, 44.4168973091372], "type": "Point"}, "id": "13", "properties": {"fonte dato": 3, "luogo": "Rivo Via Ardoino", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.883795721365844, 44.41467883998348, 8.883795721365844, 44.41467883998348], "geometry": {"coordinates": [8.883795721365844, 44.41467883998348], "type": "Point"}, "id": "14", "properties": {"fonte dato": 3, "luogo": "Via Ernesto Jurse", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.883991456109413, 44.41410948131363, 8.883991456109413, 44.41410948131363], "geometry": {"coordinates": [8.883991456109413, 44.41410948131363], "type": "Point"}, "id": "15", "properties": {"fonte dato": 3, "luogo": "Via Pacinotti", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.881704312359417, 44.41438028415579, 8.881704312359417, 44.41438028415579], "geometry": {"coordinates": [8.881704312359417, 44.41438028415579], "type": "Point"}, "id": "16", "properties": {"fonte dato": 3, "luogo": "Via Paolo Mantovani", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.878949365166765, 44.41261650554045, 8.878949365166765, 44.41261650554045], "geometry": {"coordinates": [8.878949365166765, 44.41261650554045], "type": "Point"}, "id": "17", "properties": {"fonte dato": 3, "luogo": "Dietro UCI", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.888722380063246, 44.41164407224949, 8.888722380063246, 44.41164407224949], "geometry": {"coordinates": [8.888722380063246, 44.41164407224949], "type": "Point"}, "id": "18", "properties": {"fonte dato": 3, "luogo": "Piazza Vittorio Veneto", "n segnalaz": 4.0}, "type": "Feature"}, {"bbox": [8.888763657994174, 44.41212364933348, 8.888763657994174, 44.41212364933348], "geometry": {"coordinates": [8.888763657994174, 44.41212364933348], "type": "Point"}, "id": "19", "properties": {"fonte dato": 3, "luogo": "Piazza Settembrini", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.888457194327724, 44.41101544018603, 8.888457194327724, 44.41101544018603], "geometry": {"coordinates": [8.888457194327724, 44.41101544018603], "type": "Point"}, "id": "20", "properties": {"fonte dato": 3, "luogo": "Via Felicita Noli", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.905084641844043, 44.41035292589476, 8.905084641844043, 44.41035292589476], "geometry": {"coordinates": [8.905084641844043, 44.41035292589476], "type": "Point"}, "id": "21", "properties": {"fonte dato": 3, "luogo": "Via di Francia", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.902302740123227, 44.40926933544148, 8.902302740123227, 44.40926933544148], "geometry": {"coordinates": [8.902302740123227, 44.40926933544148], "type": "Point"}, "id": "22", "properties": {"fonte dato": 3, "luogo": "Via Aliberto Albertazzi", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.890673314332016, 44.41641926748759, 8.890673314332016, 44.41641926748759], "geometry": {"coordinates": [8.890673314332016, 44.41641926748759], "type": "Point"}, "id": "23", "properties": {"fonte dato": 3, "luogo": "Via dei Landi", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.895422819159876, 44.41608140567443, 8.895422819159876, 44.41608140567443], "geometry": {"coordinates": [8.895422819159876, 44.41608140567443], "type": "Point"}, "id": "24", "properties": {"fonte dato": 3, "luogo": "Corso Martinetti", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.888138497178664, 44.415539981422945, 8.888138497178664, 44.415539981422945], "geometry": {"coordinates": [8.888138497178664, 44.415539981422945], "type": "Point"}, "id": "25", "properties": {"fonte dato": 3, "luogo": "Don Bosco", "n segnalaz": 1.0}, "type": "Feature"}, {"bbox": [8.882322253396282, 44.416018492284046, 8.882322253396282, 44.416018492284046], "geometry": {"coordinates": [8.882322253396282, 44.416018492284046], "type": "Point"}, "id": "26", "properties": {"fonte dato": 3, "luogo": "Fiumara", "n segnalaz": 10.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c3e666f93e792c8dca636e3c200bfa52.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["luogo", "n segnalaz", "fonte dato"];
+    let aliases = ["luogo", "n segnalaz", "fonte dato"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_c3e666f93e792c8dca636e3c200bfa52.addTo(feature_group_284324f00a408768e9d7a3d422a670cc);
+        
+    
+            feature_group_284324f00a408768e9d7a3d422a670cc.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_7e2207ac03293a33b872c20057a5f1c0 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_ae1941bb6328b324e6470d81e7c8a4e0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "orange", "fillColor": "orange", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_ae1941bb6328b324e6470d81e7c8a4e0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ae1941bb6328b324e6470d81e7c8a4e0 = L.geoJson(null, {
+                onEachFeature: geo_json_ae1941bb6328b324e6470d81e7c8a4e0_onEachFeature,
+            
+                style: geo_json_ae1941bb6328b324e6470d81e7c8a4e0_styler,
+        });
+
+        function geo_json_ae1941bb6328b324e6470d81e7c8a4e0_add (data) {
+            geo_json_ae1941bb6328b324e6470d81e7c8a4e0
+                .addData(data);
+        }
+            geo_json_ae1941bb6328b324e6470d81e7c8a4e0_add({"bbox": [8.882473783686931, 44.40847724977429, 8.898639756664219, 44.41831579096503], "features": [{"bbox": [8.893957564877146, 44.40847724977429, 8.898639756664219, 44.41050975519191], "geometry": {"coordinates": [[[8.894194737529542, 44.40982317222321], [8.894138610567143, 44.41050975519191], [8.895363814140326, 44.41049819400409], [8.896589704977671, 44.41016864530783], [8.897614469765047, 44.40978812755585], [8.89849288345251, 44.409420254003074], [8.898639756664219, 44.40902615702302], [8.89735970052852, 44.40903779394033], [8.896665338958403, 44.40873197455608], [8.896226973865684, 44.40847724977429], [8.895202792458235, 44.408539870648994], [8.894104709222049, 44.409047506710806], [8.893957564877146, 44.40950506657412], [8.894194737529542, 44.40982317222321]]], "type": "Polygon"}, "id": "0", "properties": {"AGGIORNAME": "DDG n. 5356 del 16/09/2019", "BACINO": "Ambito 14", "DESCRIZION": "MEDIA", "LIVELLO": "Fascia B3 (Aree storicamente inondate non studiate)", "PERICOLOS": "P2", "VARIANTE": null}, "type": "Feature"}, {"bbox": [8.882473783686931, 44.41008067988608, 8.89057289032348, 44.41808153466424], "geometry": {"coordinates": [[[8.886247583999829, 44.41806483443276], [8.88644168107888, 44.41800122564927], [8.887037085065298, 44.416737495984115], [8.887676505232397, 44.415696922045946], [8.888345569403668, 44.41464574884868], [8.888640709589923, 44.41420627039704], [8.889109381235253, 44.4137697827262], [8.889521434405891, 44.41328243061286], [8.890458450777263, 44.41243924422577], [8.89057289032348, 44.411890632414725], [8.890161771420672, 44.41189023658864], [8.890148529829222, 44.41139230950255], [8.889823640075305, 44.41077214304151], [8.889483794123342, 44.410568583347946], [8.889328778601245, 44.41008067988608], [8.886066757831971, 44.41085989990591], [8.885428288800187, 44.41113362034144], [8.884194043263275, 44.41158964023653], [8.88357420010784, 44.411796506010774], [8.883267466552553, 44.41206338558851], [8.882773944120824, 44.412530467373315], [8.882546661438294, 44.413007364488074], [8.882479443095647, 44.41333174439461], [8.882473783686931, 44.41370983218434], [8.882876517335118, 44.413905709861574], [8.883705199415884, 44.41455243609771], [8.884804500456221, 44.41627022616282], [8.88519398469343, 44.41718844432777], [8.88582109564115, 44.41786894496876], [8.885951113450895, 44.41808153466424], [8.886247583999829, 44.41806483443276]]], "type": "Polygon"}, "id": "1", "properties": {"AGGIORNAME": "DDG n. 435 del 28/01/2021", "BACINO": "Ambito Val Polcevera", "DESCRIZION": "BASSA", "LIVELLO": "Fascia C (Aree storicamente inondate: da studi propedeutici)", "PERICOLOS": "P1", "VARIANTE": null}, "type": "Feature"}, {"bbox": [8.886222250715381, 44.412360813427554, 8.889357969915336, 44.41831579096503], "geometry": {"coordinates": [[[8.886488664800504, 44.41831579096503], [8.88637499889243, 44.41794677384799], [8.887121433184742, 44.41641724845426], [8.88748481520543, 44.41580276824544], [8.888727855983278, 44.4137271968724], [8.889357969915336, 44.41316762319716], [8.88874847718772, 44.41290743018704], [8.888654207387608, 44.412360813427554], [8.887852223200573, 44.41308417154322], [8.887317775384714, 44.41345254803478], [8.88697426046418, 44.413657154309384], [8.886764073460128, 44.41391654464575], [8.886935581499376, 44.413944041280665], [8.887756493557276, 44.41330268705334], [8.888881469950965, 44.41313983298848], [8.888957562612573, 44.41322188590054], [8.88855681622208, 44.413453767346994], [8.88807874600983, 44.41424575901275], [8.887772122162668, 44.41509257009885], [8.887178991479361, 44.416226021999464], [8.887007291924945, 44.41629416729865], [8.88633711057314, 44.41782376811218], [8.886222250715381, 44.41806958926367], [8.886488664800504, 44.41831579096503]]], "type": "Polygon"}, "id": "2", "properties": {"AGGIORNAME": "DDG n. 435 del 28/01/2021", "BACINO": "Ambito Val Polcevera", "DESCRIZION": "BASSA", "LIVELLO": "Fascia B3 (Aree storicamente inondate non studiate)", "PERICOLOS": "P2", "VARIANTE": "Alluvione 04/10/2010"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_ae1941bb6328b324e6470d81e7c8a4e0.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["BACINO", "LIVELLO", "DESCRIZION", "VARIANTE"];
+    let aliases = ["BACINO", "LIVELLO", "DESCRIZION", "VARIANTE"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_ae1941bb6328b324e6470d81e7c8a4e0.addTo(feature_group_7e2207ac03293a33b872c20057a5f1c0);
+        
+    
+            feature_group_7e2207ac03293a33b872c20057a5f1c0.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var feature_group_35ad668300bb505018f4abefddaff5c7 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "purple", "fillColor": "purple", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6 = L.geoJson(null, {
+                onEachFeature: geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_onEachFeature,
+            
+                style: geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_styler,
+        });
+
+        function geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_add (data) {
+            geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6
+                .addData(data);
+        }
+            geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6_add({"bbox": [8.88236522243339, 44.4100270239083, 8.896273347386906, 44.41602935880623], "features": [{"bbox": [8.88797928543161, 44.41323244344579, 8.88797928543161, 44.41323244344579], "geometry": {"coordinates": [8.88797928543161, 44.41323244344579], "type": "Point"}, "id": "0", "properties": {"fonte dato": 1, "luogo": "Piazza Montano", "n segnalaz": 2.0}, "type": "Feature"}, {"bbox": [8.882478295514662, 44.412441299902596, 8.882478295514662, 44.412441299902596], "geometry": {"coordinates": [8.882478295514662, 44.412441299902596], "type": "Point"}, "id": "1", "properties": {"fonte dato": 1, "luogo": "Fiumara", "n segnalaz": 34.0}, "type": "Feature"}, {"bbox": [8.896273347386906, 44.41162889125486, 8.896273347386906, 44.41162889125486], "geometry": {"coordinates": [8.896273347386906, 44.41162889125486], "type": "Point"}, "id": "2", "properties": {"fonte dato": 1, "luogo": "Parco Villa Scassi", "n segnalaz": 24.0}, "type": "Feature"}, {"bbox": [8.893789143819957, 44.4100270239083, 8.893789143819957, 44.4100270239083], "geometry": {"coordinates": [8.893789143819957, 44.4100270239083], "type": "Point"}, "id": "3", "properties": {"fonte dato": 1, "luogo": "Via Buranello", "n segnalaz": 19.0}, "type": "Feature"}, {"bbox": [8.892686900759529, 44.411924309942364, 8.892686900759529, 44.411924309942364], "geometry": {"coordinates": [8.892686900759529, 44.411924309942364], "type": "Point"}, "id": "4", "properties": {"fonte dato": 1, "luogo": "Via Cantore", "n segnalaz": 15.0}, "type": "Feature"}, {"bbox": [8.896210515168736, 44.41008840597912, 8.896210515168736, 44.41008840597912], "geometry": {"coordinates": [8.896210515168736, 44.41008840597912], "type": "Point"}, "id": "5", "properties": {"fonte dato": 1, "luogo": "Piazza Tre Ponti", "n segnalaz": 7.0}, "type": "Feature"}, {"bbox": [8.88236522243339, 44.41602935880623, 8.88236522243339, 44.41602935880623], "geometry": {"coordinates": [8.88236522243339, 44.41602935880623], "type": "Point"}, "id": "6", "properties": {"fonte dato": 1, "luogo": "Centro sportivo Crocera", "n segnalaz": 7.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["luogo", "n segnalaz", "fonte dato"];
+    let aliases = ["luogo", "n segnalaz", "fonte dato"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_dd3c62ccf0b49cc8b6f5bed7b6c210f6.addTo(feature_group_35ad668300bb505018f4abefddaff5c7);
+        
+    
+            feature_group_35ad668300bb505018f4abefddaff5c7.addTo(map_e4b72bdc324783fdf274f3a338233a73);
+        
+    
+            var layer_control_ef69b6d2006101c8f4f56132f9d7654f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_771d9cc194f0c75dac3f7a128d6e36f0,
+                },
+                overlays :  {
+                    "Google Earth" : tile_layer_cc7e41382714be751890800c4155bc6d,
+                    "I Event Local Criticalities" : feature_group_7887a6ea70d45f8ffae61de800c34c6a,
+                    "I Event Areal Criticalities" : feature_group_007c5bf8f0565788711b272db26817bd,
+                    "Most frequented zones - Students" : feature_group_62da4e44ee28e77a49edd5fe0b2b574b,
+                    "SUDS Location - General Public" : feature_group_284324f00a408768e9d7a3d422a670cc,
+                    "Historically Flooded Areas" : feature_group_7e2207ac03293a33b872c20057a5f1c0,
+                    "SUDS Location - Students" : feature_group_35ad668300bb505018f4abefddaff5c7,
+                },
+            };
+            let layer_control_ef69b6d2006101c8f4f56132f9d7654f = L.control.layers(
+                layer_control_ef69b6d2006101c8f4f56132f9d7654f_layers.base_layers,
+                layer_control_ef69b6d2006101c8f4f56132f9d7654f_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e4b72bdc324783fdf274f3a338233a73);
+
+        
+</script>
+</html>
